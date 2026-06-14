@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BUT 2 - Technique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Entête avec infos toujours visibles (Imposé) -->
+    <header>
+        <div class="identity">
+            <h1>Thomas [Nom de famille]</h1>
+            <p>Portfolio BUT Informatique - Deuxième Année (BUT 2)</p>
+        </div>
+        <div class="contact-info">
+            <p>Email : <a href="mailto:thomas.adresse@email.com">thomas.adresse@email.com</a></p>
+            <p>Statut : Étudiant en Alternance</p>
+            <p><a href="https://github.com" target="_blank">Mon Profil GitHub</a></p>
+        </div>
+    </header>
+
+    <div class="nav-container">
+        <a href="index.html" class="main-nav-link">Page d'accueil</a>
+        <a href="technique.html" class="main-nav-link active">Technique</a>
+        <a href="suivi-projet.html" class="main-nav-link">Suivi de projet</a>
+        <a href="integration-entreprise.html" class="main-nav-link">Intégration en entreprise</a>
+    </div>
+
+    <main>
+        <div class="page-content">
+            <h2>Démonstration des Compétences Techniques</h2>
+            <p>Cette section présente les compétences acquises en développement d'applications à travers la conception et l'implémentation de notre solution logicielle.</p>
+
+            <div class="sub-layout">
+                <div class="sub-content">
+                    <h3>Sous-page : Conception Logicielle &amp; Architecture Orientée Objet</h3>
+                    
+                    <!-- Liste colorée des savoir-faire élémentaires (Imposé) -->
+                    <ul class="skills-list">
+                        <li class="sf-mvc">Concevoir l'architecture logicielle d'une application (MVC)</li>
+                        <li class="sf-srp">Définir une hiérarchie de classes à responsabilité unique</li>
+                        <li class="sf-inherit">Modéliser les relations orientées objet par l'héritage</li>
+                        <li class="sf-pattern">Implémenter des patrons de conception (Design Patterns)</li>
+                    </ul>
+
+                    <!-- Section Traces -->
+                    <div class="trace-container">
+                        <div class="trace-placeholder">
+                            <strong>[ Emplacement : Portfolio-Trace1_Technique_Edited.jpg ]</strong><br>
+                            Surlignages présents : Traits bleus (MVC) et Encadré rouge (Responsabilité Unique).
+                        </div>
+                        <div class="trace-caption">Trace n°1 : Diagramme de classes UML illustrant l'organisation globale de l'application selon le modèle MVC et la spécialisation des fenêtres.</div>
+                    </div>
+
+                    <div class="trace-container">
+                        <div class="trace-placeholder">
+                            <strong>[ Emplacement : Portfolio-Trace2_Technique_Edited.PNG ]</strong><br>
+                            Surlignages présents : Flèches vertes (Héritage) et Encadré violet (Pattern Adapter / ConnectionDB).
+                        </div>
+                        <div class="trace-caption">Trace n°2 : Zoom UML sur les relations d'héritage et l'encapsulation de la logique de connexion aux automates.</div>
+                    </div>
+
+                    <!-- Descriptif Général de la trace (Imposé) -->
+                    <h3>1. Descriptif général des traces et contexte</h3>
+                    <p>
+                        Les <strong>traces n°1 et n°2</strong> présentent le diagramme de classes UML de l'application que j'ai développée durant mon alternance. Cette application a pour objectif de simuler des comportements et de diagnostiquer des automates programmables industriels, appelés communément <strong>PLC</strong> (<em>Programmable Logic Controller</em>). 
+                    </p>
+                    <p>
+                        Au sein de mon projet, ce schéma représente l'aboutissement de la phase de conception technique. Il matérialise la transition essentielle entre le recueil des besoins fonctionnels et l'écriture concrète des lignes de code. La <strong>trace n°1</strong> offre une vision macroscopique de l'architecture, tandis que la <strong>trace n°2</strong> cible des mechanisms orientés objet avancés dédiés à la communication avec le matériel.
+                    </p>
+
+                    <!-- Descriptif des Savoir-faire (Imposé avec mise en couleur) -->
+                    <h3>2. Analyse détaillée des savoir-faire mis en œuvre</h3>
+                    <p>
+                        Pour garantir la maintenabilité du code, j'ai dû <span class="sf-mvc bg-sf-mvc">concevoir l'architecture logicielle de l'application</span> en m'appuyant sur le modèle architectural MVC (Modèle-Vue-Contrôleur). Comme le mettent en évidence les traits bleus apposés sur la <strong>trace n°1</strong>, j'ai scrupuleusement séparé la logique métier (`Model`), l'interface graphique (`View`) et la gestion des événements (`Controller`). Cette isolation stricte permet de modifier l'interface utilisateur ou de basculer vers une autre technologie graphique sans altérer la logique interne de traitement des données.
+                    </p>
+                    <p>
+                        Dans cette même optique de qualité logicielle, j'ai veillé à <span class="sf-srp bg-sf-srp">définir une hiérarchie de classes à responsabilité unique</span>. Au niveau de l'interface graphique, plutôt que de regrouper l'ensemble des écrans au sein d'une seule classe monolithique complexe, j'ai créé une classe dédiée par fenêtre de l'application. L'encadré rouge de la <strong>trace n°1</strong> illustre ce principe : les fenêtres `PLCFrame` (édition des champs de l'automate), `CFGFrame` (édition des configurations) et `EmulateFrame` (fenêtre de simulation) possèdent leurs propres structures et rôles d'affichage bien distincts.
+                    </p>
+                    <p>
+                        Afin de factoriser les structures de données communs et d'éviter les duplications de code, il a été nécessaire de <span class="sf-inherit bg-sf-inherit">modéliser les relations orientées objet par l'héritage</span>. Sur la <strong>trace n°2</strong>, les flèches vertes mettent en lumière les liens d'héritage (`Inherit`). Par exemple, les classes gérant les cas d'usage spécifiques (`CycleUseCase` et `FunUseCase`) héritent d'une classe mère abstraite commune nommée `UseCase`. Elles s'approprient ainsi automatiquement ses attributs et méthodes de base tout en implémentant leur propre traitement métier spécifique.
+                    </p>
+                    <p>
+                        Enfin, pour rendre notre application compatible avec plusieurs types de matériels, j'ai été amené à <span class="sf-pattern bg-sf-pattern">implémenter des patrons de conception (Design Patterns)</span>. Tel que le montre l'encadré violet de la <strong>trace n°2</strong>, j'ai conçu la classe `ConnectionDB` (où le sigle "DB" désigne un <em>Data Block</em>, c'est-à-dire un bloc de données interne à un automate programmable, et non une base de données traditionnelle). Cette classe applique le design pattern *Adapter* (Adaptateur) : elle standardise les méthodes universelles de lecture et d'écriture (`readAt()`, `write()`) pour que l'application puisse interagir de manière transparente avec un automate de marque Siemens (`SiemensConnection`) ou tout autre modèle tiers (`OtherPLCTypes`) héritant de cette interface commune.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
