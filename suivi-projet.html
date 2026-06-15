@@ -8,33 +8,77 @@
 </head>
 <body>
 
-    <!-- Entête avec infos toujours visibles (Imposé) -->
-    <header>
-        <div class="identity">
-            <h1>Thomas [Nom de famille]</h1>
-            <p>Portfolio BUT Informatique - Deuxième Année (BUT 2)</p>
-        </div>
-        <div class="contact-info">
-            <p>Email : <a href="mailto:thomas.adresse@email.com">thomas.adresse@email.com</a></p>
-            <p>Statut : Étudiant en Alternance</p>
-            <p><a href="https://github.com" target="_blank">Mon Profil GitHub</a></p>
-        </div>
-    </header>
+    <div class="sticky-header-container">
+        <header>
+            <div class="identity">
+                <h1>Thomas MILLON</h1>
+                <p>Portfolio BUT Informatique - Deuxième Année (BUT 2)</p>
+            </div>
+            <div class="contact-info">
+                <p>Email : <a href="mailto:millon.thomas28@gmail.com">millon.thomas28@gmail.com</a></p>
+                <p>Statut : Étudiant en Alternance</p>
+                <p><a href="https://github.com/ThomasMillon" target="_blank">Mon Profil GitHub</a></p>
+            </div>
+        </header>
 
-    <div class="nav-container">
-        <a href="index.html" class="main-nav-link">Page d'accueil</a>
-        <a href="technique.html" class="main-nav-link">Technique</a>
-        <a href="suivi-projet.html" class="main-nav-link active">Suivi de projet</a>
-        <a href="integration-entreprise.html" class="main-nav-link">Intégration en entreprise</a>
+        <div class="nav-container">
+            <a href="index.html" class="main-nav-link">Page d'accueil</a>
+            <a href="technique.html" class="main-nav-link">Technique</a>
+            <a href="suivi-projet.html" class="main-nav-link active">Suivi de projet</a>
+            <a href="integration-entreprise.html" class="main-nav-link">Intégration en entreprise</a>
+        </div>
     </div>
 
     <main>
         <div class="page-content">
-            <h2>Suivi de Projet</h2>
-            <p class="info-box">Cette section contiendra l'analyse et la description de la trace n°3 (Diagramme de Gantt) concernant la planification des phases d'initiation et de POC.</p>
-            
-            <div class="placeholder-section">
-                <p><em>[Le texte complet et les savoir-faire associés à la gestion de projet seront rédigés et insérés ici lors de notre prochaine session de travail].</em></p>
+            <h2>Suivi de Projet et Cadrage</h2>
+            <p>Cette section détaille la méthode de gestion et de suivi que j'ai appliquée tout au long du projet.</p>
+
+            <div class="sub-layout">
+                <div class="sub-content">
+                    <h3>Sous-page : Planification et Pilotage des Échéances</h3>
+                    
+                    <ul class="skills-list">
+                        <li class="sf-analyse">Analyser l'environnement technologique existant</li>
+                        <li class="sf-specs">Rédiger des spécifications fonctionnelles et techniques</li>
+                        <li class="sf-jalons">Intégrer des jalons de validation</li>
+                        <li class="sf-planif">Planifier les phases de développement</li>
+                    </ul>
+
+                    <div class="trace-container">
+                        <img src="./images/Portfolio-Trace3_Suivi-Projet_Edited.PNG" alt="Trace 3 Suivi Projet" class="trace-img">
+                        <div class="trace-caption">Trace n°3 : Diagramme de Gantt montrant le planning, l'ordre des tâches et les réunions de validation du projet.</div>
+                    </div>
+
+                    <h3>1. Descriptif général de la trace et contexte</h3>
+                    <p>
+                        La <strong>trace n°3</strong> représente le diagramme de Gantt que j'ai créé et mis à jour pour organiser et suivre mon travail en entreprise. Ce planning est découpé en deux grandes phases, entourées en rouge sur la gauche : la phase d'initiation pour l'étude et le cadrage, et la phase de réalisation de la preuve de concept (<em>POC - Proof of Concept</em>).
+                    </p>
+                    <p>
+                        Dans mon alternance, ce document est mon tableau de bord pour la gestion de projet. Il permet de montrer clairement où en sont les développements à mon tuteur et aux autres équipes. Le terme « BG » signifie <em>Business Group</em> (le groupe métier), qui est mon client interne et le commanditaire du projet.
+                    </p>
+
+                    <h3>2. Analyse détaillée des savoir-faire mis en œuvre</h3>
+                    <p>
+                        Pour commencer le projet sur de bonnes bases, j'ai d'abord dû <span class="sf-analyse bg-sf-analyse">analyser l'environnement technologique existant</span>. Comme le montre l'encadré jaune sur la <strong>trace n°3</strong>, la phase d'initiation commence par l'étude du contexte et du fonctionnement du logiciel actuel de l'entreprise (<em>understanding of the context and the current tool</em>). Cela m'a permis de comprendre ses points forts et ses faiblesses pour concevoir une solution adaptée.
+                    </p>
+                    <p>
+                        Après cette étude, j'ai utilisé mes compétences pour <span class="sf-specs bg-sf-specs">rédiger des spécifications fonctionnelles et techniques</span>. Ce travail est entouré en vert sur la <strong>trace n°3</strong>. J'ai d'abord listé les besoins en me basant sur l'ancienne application GPdiag (<em>start functional specifications based on current GPdiag</em>), puis j'ai écrit les détails techniques et fonctionnels de la nouvelle version (<em>definition of the POC specifications</em>). Ces documents servent de guide pour le développement.
+                    </p>
+                    <p>
+                        Pour sécuriser le projet et ne pas travailler seul de mon côté, j'ai veillé à <span class="sf-jalons bg-sf-jalons">intégrer des jalons de validation</span> réguliers avec les utilisateurs. On les voit avec les encadrés violets sur la <strong>trace n°3</strong>. Ces moments d'échange permettent de valider chaque étape importante : le choix du périmètre à la fin du cadrage (<em>validation with the BG</em>), une présentation d'avancement au milieu (<em>presentation to the BG</em>) et une démonstration finale pour valider la recette de la preuve de concept (<em>presentation to the BG and validation by the BG</em>).
+                    </p>
+                    <p>
+                        Enfin, pour gérer le calendrier, j'ai appris à <span class="sf-planif bg-sf-planif">planifier les phases de développement</span>. La flèche bleue sur la <strong>trace n°3</strong> montre la ligne du temps organisée par semaines (W39 à W13). J'ai estimé le temps pour chaque tâche, défini l'ordre des étapes et pris en compte les imprévus, comme les périodes d'absence affichées en gris. Même si des problèmes techniques ont bousculé le planning et décalé la livraison par rapport aux prévisions de départ, tenir ce suivi de projet a été indispensable pour mesurer les retards, revoir les priorités et piloter la suite du travail face aux contraintes de l'entreprise.
+                    </p>
+
+                    <h3>3. Auto-évaluation et bilan personnel</h3>
+                    <div class="evaluation-box">
+                        <p><strong>Contexte d'apprentissage et maîtrise :</strong> Sur l'aspect gestion et planification de projet, j'ai appris à utiliser ces méthodes lors de certains cours, mais je n'avais pas assimilé correctement toutes les notions et leurs objectifs. </p>
+                        <p><strong>Difficultés rencontrées :</strong> Face aux retards et aux aléas techniques rencontrés sur le planning, la gestion de mon temps a été compliquée parce que ne connaisant pas le monde de l'entreprise et son contexte, je n'avais pas réalisé tous les aléas qui pouvaient arriver ainsi que leur importance, la date de validiation de la preuve de concept s'est donc vue décalée de plusieurs mois. </p>
+                        <p><strong>Évolution de mon niveau d'expertise :</strong> Si je compare mon niveau avant et après la gestion de ce calendrier, je remarque que je ne connaissais rien au milieu de l'entreprise et je n'ai estimé les délais qu'avec le temps que je pensais mettre au développement aux vues de mes compétences, qui elles mêmes s'avéraient finalement être floues aussi. Je m'évalue donc comme moyen car j'ai appris que tout ne dépend pas que de soi-même et qu'en entreprise, tout prend souvent beaucoup plus de temps que la première estimation intuitive que nous avons et que le client peut souvent avoir de nouvelles idées en chemin. J'étais donc très mauvais dans cette compétence, mais cette expérience m'a permi d'apprendre de mes erreurs. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

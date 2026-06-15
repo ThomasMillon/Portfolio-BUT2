@@ -8,33 +8,73 @@
 </head>
 <body>
 
-    <!-- Entête avec infos toujours visibles (Imposé) -->
-    <header>
-        <div class="identity">
-            <h1>Thomas [Nom de famille]</h1>
-            <p>Portfolio BUT Informatique - Deuxième Année (BUT 2)</p>
-        </div>
-        <div class="contact-info">
-            <p>Email : <a href="mailto:thomas.adresse@email.com">thomas.adresse@email.com</a></p>
-            <p>Statut : Étudiant en Alternance</p>
-            <p><a href="https://github.com" target="_blank">Mon Profil GitHub</a></p>
-        </div>
-    </header>
+    <div class="sticky-header-container">
+        <header>
+            <div class="identity">
+                <h1>Thomas MILLON</h1>
+                <p>Portfolio BUT Informatique - Deuxième Année (BUT 2)</p>
+            </div>
+            <div class="contact-info">
+                <p>Email : <a href="mailto:millon.thomas28@gmail.com">millon.thomas28@gmail.com</a></p>
+                <p>Statut : Étudiant en Alternance</p>
+                <p><a href="https://github.com/ThomasMillon" target="_blank">Mon Profil GitHub</a></p>
+            </div>
+        </header>
 
-    <div class="nav-container">
-        <a href="index.html" class="main-nav-link">Page d'accueil</a>
-        <a href="technique.html" class="main-nav-link">Technique</a>
-        <a href="suivi-projet.html" class="main-nav-link">Suivi de projet</a>
-        <a href="integration-entreprise.html" class="main-nav-link active">Intégration en entreprise</a>
+        <div class="nav-container">
+            <a href="index.html" class="main-nav-link">Page d'accueil</a>
+            <a href="technique.html" class="main-nav-link">Technique</a>
+            <a href="suivi-projet.html" class="main-nav-link">Suivi de projet</a>
+            <a href="integration-entreprise.html" class="main-nav-link active">Intégration en entreprise</a>
+        </div>
     </div>
 
     <main>
         <div class="page-content">
-            <h2>Intégration en Entreprise</h2>
-            <p class="info-box">Cette section contiendra l'analyse et la description de la trace n°4 (Notes de réunions) illustrant le recueil des retours utilisateurs et la communication en milieu professionnel.</p>
-            
-            <div class="placeholder-section">
-                <p><em>[Le texte complet et les savoir-faire associés à la communication et aux réunions d'équipe seront insérés ici lors de notre prochaine session de travail].</em></p>
+            <h2>Intégration en Entreprise et Communication</h2>
+            <p>Cette section montre comment je travaille dans une équipe professionnelle et comment je communique avec les différents membres de l'entreprise.</p>
+
+            <div class="sub-layout">
+                <div class="sub-content">
+                    <h3>Sous-page : Réunions, Recueil de Besoins et Retours Utilisateurs</h3>
+                    
+                    <ul class="skills-list">
+                        <li class="sf-ux">Recueillir et analyser les retours utilisateurs</li>
+                        <li class="sf-adapt">Adapter son vocabulaire technique à son auditoire</li>
+                        <li class="sf-trad">Traduire un besoin métier en spécification technique</li>
+                    </ul>
+
+                    <div class="trace-container">
+                        <img src="./images/Portfolio-Trace4_Intégration-Entreprise_Edited.PNG" alt="Trace 4 Intégration Entreprise" class="trace-img">
+                        <div class="trace-caption">Trace n°4 : Extrait du fichier partagé de suivi des réunions, montrant les remarques et demandes de modifications du groupe métier (BG).</div>
+                    </div>
+
+                    <h3>1. Descriptif général de la trace et contexte</h3>
+                    <p>
+                        La <strong>trace n°4</strong> est un extrait d'un fichier partagé que l'on utilise dans mon entreprise pour écrire les comptes-rendus de réunions. Ce n'est pas une simple prise de notes personnelle, mais un document collaboratif qui regroupe les questions, les retours et les décisions prises quand je présentais mon avancement au groupe métier (le BG).
+                    </p>
+                    <p>
+                        Dans mon alternance, ce document est important car il montre comment mon travail technique s'intègre dans l'entreprise. Il prouve qu'une démonstration de code débouche sur un plan d'action concret partagé par toute l'équipe, pour être sûr que le logiciel répond bien aux besoins du terrain.
+                    </p>
+
+                    <h3>2. Analyse détaillée des savoir-faire mis en œuvre</h3>
+                    <p>
+                        Pendant ces réunions, j'ai pu apprendre à <span class="sf-ux bg-sf-ux">recueillir et analyser les retours utilisateurs</span>. Les flèches bleues sur la <strong>trace n°4</strong> indiquent des remarques sur l'interface et l'expérience utilisateur (UX/UI). Nous avons noté des demandes simples mais importantes pour le confort des opérateurs, comme le fait d'<em>« agrandir la police »</em> ou de <em>« supprimer le projet new project »</em>. Prendre en compte ces retours permet d'être sûr que l'outil sera bien accepté.
+                    </p>
+                    <p>
+                        Lors des présentations, j'ai aussi dû <span class="sf-adapt bg-sf-adapt">adapter mon vocabulaire technique à mon auditoire</span>, car les personnes présentes n'étaient pas des développeurs. Les encadrés rouges de la <strong>trace n°4</strong> montrent cet effort pour parler plus simplement. Par exemple, j'ai mis de côté le mot très technique de <em>« use case »</em> pour l'instant (<em>« je vous expliquerai ce qu'ils sont plus tard »</em>) pour ne pas perdre les gens. De même, la fonction d'import a été renommée pour correspondre à leurs habitudes (<em>« Import from excel »</em> est devenu <em>« import configuration from file »</em>).
+                    </p>
+                    <p>
+                        Enfin, en tant qu'informaticien, je dois savoir <span class="sf-trad bg-sf-trad">traduire un besoin métier en spécification technique</span>. L'encadré vert sur la <strong>trace n°4</strong> en est un bon exemple. Pendant la deuxième réunion (<em>2nd réunion</em>), un point sur le comportement du système a été clarifié et écrit directement sous forme de consigne technique : <em>« C'est le PLC qui va overwrite les data dans FUN_DATA »</em>. Cela transforme une discussion orale en une règle de développement claire pour mon code.
+                    </p>
+
+                    <h3>3. Auto-évaluation et bilan personnel</h3>
+                    <div class="evaluation-box">
+                        <p><strong>Contexte d'apprentissage et maîtrise :</strong> Travailler sur un document collaboratif partagé et échanger avec des équipes métiers est un exercice que j'ai découvert cette année en entreprise. On nous apprend à travailler en équipe à l'école, mais j'ai trouvé mon expérience en entreprise très différente des exercices que j'ai pu faire par le passé. </p>
+                        <p><strong>Difficultés rencontrées :</strong> Le fait de devoir traduire du jargon technique ou comprendre des besoins exprimés sans termes informatiques m'a demandé de m'adapter parfois en direct et d'apprendre à traduire des besoins fonctionnels en solutions techniques. </p>
+                        <p><strong>Évolution de mon niveau d'expertise :</strong> Par rapport au début de mon alternance, ma manière de communiquer en entreprise a évolué car j'ai commencé à intégrer les notions d'échanges et de sauvegarde de traces que demande ce milieu. Je pense être aujourd'hui à un niveau moyen puisque je pense avoir su adapter mes compétences en communication au milieu de l'entreprise. Mais je sais que je n'ai pas encore tous les bons réflexes de prise de notes, de documentation et de partage. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
